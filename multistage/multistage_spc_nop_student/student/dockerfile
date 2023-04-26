@@ -1,6 +1,7 @@
 FROM alpine/git AS vcs
 RUN cd / && git clone https://github.com/DevProjectsForDevOps/StudentCoursesRestAPI.git && \
     pwd && ls /StudentCoursesRestAPI
+
 FROM python:3.8.3-alpine As Builder
 LABEL author="archana" organization="qt" project="learning"
 COPY --from=vcs /StudentCoursesRestAPI /StudentCoursesRestAPI
