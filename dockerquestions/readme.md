@@ -25,6 +25,8 @@ An image is a read-only template with instructions for creating a Docker contain
 * runc-it's create the container 
 * docker logs:
 Logging has always been a central part of application monitoring. Logs tell the full story of what is happening, or what happened at every layer of the stack. Whether it’s the application layer, the networking layer, the infrastructure layer, or storage – logs have all the answers
+* exec command use?
+* The `docker exec` command is a useful tool for running commands in a Docker container. It allows you to debug, test, and administer containers from the command line.
 * 
 ## Kubernetes Questions
 
