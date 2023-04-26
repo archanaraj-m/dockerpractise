@@ -1,15 +1,18 @@
 ## Interview Questions
 * 1.what directives we use in docker so far?
-LABEL,RUN,WORKDIR,EXPOSE,ENV,ADD,COPY,
+  LABEL,RUN,WORKDIR,EXPOSE,ENV,ADD,COPY,
 * 2.what is the entrypoint?
-* 3.before from any directive we use?
-ARCH
+* 
+* 3.Before FROM any directive we use?
+  ARCH
 * 4.which directive we can use for taking dockerfile?
-FROM
+  FROM
 * 5.difference between ARG and ENV directives in docker?
 ENV is for future running containers. ARG for building your Docker image. ENV is mainly meant to provide default values for your future environment variables. Running dockerized applications can access environment variables. It’s a great way to pass configuration values to your project. ARG values are not available after the image is built.
-* What is milithone?
-* all of done in one server i.e milithone
+* 6.What is milithone?
+  All of done in one server i.e milithone
+* 7.what is the use of this command "docker exec -it <containername/id> sh
+* 
 
 
 ## Kubernetes Questions

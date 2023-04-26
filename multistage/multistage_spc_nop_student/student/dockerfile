@@ -13,6 +13,8 @@ WORKDIR StudentCoursesRestAPI
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python", "app.py"]
+
+
 # docker build image -t studentcourserestservice:1.0 .
 # docker container run -d --name mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=test -e MYSQL_USER=directdevops -e MYSQL_PASSWORD=directdevops mysql:5.6
 # docker inspect mysql | grep IPAddress
