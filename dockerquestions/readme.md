@@ -2,7 +2,7 @@
 * 1.what directives we use in docker so far?
   LABEL,RUN,WORKDIR,EXPOSE,ENV,ADD,COPY,
 * 2.what is the entrypoint?
-* 
+  Docker entrypoint is a Dockerfile directive or instruction that is used to specify the executable which should run when a container is started from a Docker image. It has two forms, the first one is the ‘exec’ form and the second one is the ‘shell’ form. If there is no entrypoint or CMD specified in the Docker image, it starts and exits at the same time that means container stops automatically so, we must have to specify entrypoint or CMD so that when we will start the container it should execute something rather than going to stop.
 * 3.Before FROM any directive we use?
   ARCH
 * 4.which directive we can use for taking dockerfile?
