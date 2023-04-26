@@ -1,7 +1,11 @@
 # dockerpractise
 Docker Workshop-3 Activities (21/APR/2023) - Khaja Sir   
 ------------------------------------------------------------------------
-
+* First we can take one onstance in that install docker with use of this commands(6april2023/directdevops blog)
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+```
 # 1) Create a multi-stage docker file to build  
     a) nop commerce  
     b) spring petclinic

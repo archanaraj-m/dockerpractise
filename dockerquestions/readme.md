@@ -11,8 +11,10 @@
 ENV is for future running containers. ARG for building your Docker image. ENV is mainly meant to provide default values for your future environment variables. Running dockerized applications can access environment variables. It’s a great way to pass configuration values to your project. ARG values are not available after the image is built.
 * 6.What is milithone?
   All of done in one server i.e milithone
-* 7.what is the use of this command "docker exec -it <containername/id> sh
-* 
+* 7.what is the use of this command "docker exec -it <containername/id> /sh
+* It is used for inside the container and /sh is for alpine image and /bin/sh is used for ubuntu. 
+* 8.what is docker?
+* Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
 
 
 ## Kubernetes Questions
