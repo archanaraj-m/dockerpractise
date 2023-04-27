@@ -11,6 +11,21 @@ sh get-docker.sh
     b) spring petclinic
     c) student courses register
 ## a)nop commerce
+# Let's create a multi-stage docker file to build nop commerce
+ * Take an a EC2 Machine and Install Docker by using below commands,
+  ```
+  curl -fsSL https://get.docker.com -o get-docker.sh
+  sh get-docker.sh
+  sudo usermod -aG docker ubuntu
+  ```
+  After successful installation re-login into your machine
+  After re-login try to get docker info
+  ```
+  $ docker -—version
+  $ docker info
+  ```
+#  create a dockerfile in vi Dockerfile
+
 * First we can write dockerfile with help of manual commands
 * To build this application we need
     dotnet sdk7.0
