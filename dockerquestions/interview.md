@@ -1,7 +1,14 @@
 Interview questions
 --------------------
-1.Tell us about yourself?
-
+# 1.Tell us about yourself?
+ Thank you for giving this opportunity.
+ My name is Archana i'm from hyd.
+ coming about my education details 
+ I complted my bachelor's techonology in PRRM engg college with stream of computes science in 2011
+ and after that i'm working as a HR recrutier in AXIS technologies.
+my hobbies are learn newthings and in the free time i do sudoku puzzles.
+my goal:My long-term goal is to see myself in a respectable position, I am always looking for opportunities to learn and grow, and I believe that with hard work and dedication, I can achieve my career goals.
+I'm self motivated,I'm very enthusiastic to learn new things for my career growth.
 # 2.Explain Docker Images?
 * A Docker image is a file used to execute code in a Docker container. Docker images act as a set of instructions to build a Docker container, like a template. Docker images also act as the starting point when using Docker. An image is comparable to a snapshot in virtual machine (VM) environments.
 
