@@ -35,10 +35,10 @@ This is a common method to create images in production or testing. Most of the t
 * COPY is a docker file command that copies files from a local source location to a destination in the Docker container. ADD command is used to copy files/directories into a Docker.
 * ADD and COPY are two similar Dockerfile instructions which let you add content to your images at build time. Whereas COPY is a straightforward source to destination copy, ADD includes extra functionality for working with archives and remote URLs.
 
-8.Can you explain the concept of Layers in Docker Image?
+# 8.Can you explain the concept of Layers in Docker Image?
 [Referhere](https://dzone.com/articles/docker-layers-explained)
 
-9.What is the purpose of EXPOSE and VOLUME instruction in Dockerfile?
+# 9.What is the purpose of EXPOSE and VOLUME instruction in Dockerfile?
 
 # 10.What is your workflow for CI/CD with Docker Containers and where do you store images?
 * A version control system (VCS) is a unified source code repository that maintains code changes. This generates the trigger for a CI/CD tool to start the pipeline whenever a new change is pushed into its repository. Image registries store the Docker container images.

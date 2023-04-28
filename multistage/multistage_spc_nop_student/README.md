@@ -11,6 +11,7 @@ sh get-docker.sh
     b) spring petclinic
     c) student courses register
 ## a)nop commerce
+
 # Let's create a multi-stage docker file to build nop commerce
  * Take an a EC2 Machine and Install Docker by using below commands,
   ```
@@ -18,8 +19,12 @@ sh get-docker.sh
   sh get-docker.sh
   sudo usermod -aG docker ubuntu
   ```
+  ![preview](./ms-images/ig1.png)
   After successful installation re-login into your machine
   After re-login try to get docker info
+  ![preview](./ms-images/ig2.png)
+  ![preview](./ms-images/ig3.png)
+  
   ```
   $ docker -—version
   $ docker info
@@ -47,18 +52,18 @@ EXPOSE 5000
 CMD [ "dotnet", "Nop.Web.dll", "--urls", "http://0.0.0.0:5000" ]
 
 ```
-* After creating docker file past ie in $ vi dockerfile
+* After creating docker file past it in $ vi dockerfile
 * for build the image
 ```
-docker build image -t nopimage .
+docker image build -t nopimage .
 docker image ls
 docker container run --name nopcont -d -p 3001:5000 nopimage
 docker container ls -a
 
 ```
-![preview](../ms-images/img4.png)
+![preview](./ms-images/img4.png)
 * with use of that port number paste in dockerplayground then in newtab nop page came
-![preview](./../ms-images/img5.png)
+![preview](./ms-images/img5.png)
 
 
 ## b)spring petclinic
@@ -101,7 +106,7 @@ CMD ["java", "-jar", "spring-petclinic.jar"]
  ```
    docker image build -t spc .
  ```
-![preview](./../ms-images/img1.png)
+![preview](./ms-images/img1.png)
 * To check the image
 ```
   docker image ls
@@ -111,10 +116,10 @@ CMD ["java", "-jar", "spring-petclinic.jar"]
   docker container run --name spccont -d -p 3000:8080 spc
   docker container ps -a
   ```   
-![preview](../ms-images/img2.png)
+![preview](./ms-images/img2.png)
 * go to newtab 
 * instance public IP address/3001 then spc page came
-![preview](../ms-images/img3.png)
+![preview](./ms-images/img3.png)
 
 ## c)student cources register
 
@@ -143,9 +148,9 @@ docker image build -t student .
 docker image ls
 docker container run --name studentcont -d -p 3000:8080 student
 ```
-![preview](../ms-images/img6.png)
+![preview](./ms-images/img6.png)
 * with use of that port number paste in dockerplayground then in newtab student course register page came
-![preview](./../ms-images/img7.png)
+![preview](./ms-images/img7.png)
 
 
 
