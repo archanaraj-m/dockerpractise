@@ -93,6 +93,7 @@ Startup time: Containers can be started and stopped much more quickly than VMs, 
 # 9.What is the purpose of EXPOSE and VOLUME instruction in Dockerfile?
 
 # 10.What is your workflow for CI/CD with Docker Containers and where do you store images?
+![preview](./images/img2.png)
 * A version control system (VCS) is a unified source code repository that maintains code changes. This generates the trigger for a CI/CD tool to start the pipeline whenever a new change is pushed into its repository. Image registries store the Docker container images.
 * Here is a high-level overview of a CI/CD workflow with Docker containers:
 
