@@ -47,19 +47,4 @@ Logging has always been a central part of application monitoring. Logs tell the 
 * 13.docker image build -f image in this command what is -f?
 * f for file ,we can use -f or --file
 * [referhere](https://docs.docker.com/engine/reference/commandline/build/#:~:text=The%20docker%20build%20command%20builds,a%20file%20in%20the%20context.)
-## Kubernetes Questions
 
-# distributed system kubernetes:
-Kubernetes provides you with a framework to run distributed systems resiliently. It takes care of scaling and failover for your application, provides deployment patterns, and more. For example: Kubernetes can easily manage a canary deployment for your system.
-# node:
-A Kubernetes node is a machine that runs containerized workloads as part of a Kubernetes cluster. A node can be a physical machine or a virtual machine, and can be hosted on-premises or in the cloud. A Kubernetes cluster can have a large number of nodes—recent versions support up to 5,000 nodes.
-# Cluster Kubernetes:
-What is a Kubernetes cluster? A Kubernetes cluster is a set of nodes that run containerized applications. Containerizing applications packages an app with its dependences and some necessary services. They are more lightweight and flexible than virtual machines.
-# What are the states in Kubernetes?
-There are three possible container states: Waiting , Running , and Terminated . To check the state of a Pod's containers, you can use kubectl describe pod <name-of-pod> .
-# What is stateful and stateless application in Kubernetes?
-Stored Data: If the webserver stores data in a backend manner and uses it to identify the user as an always-connected client, the service is Stateful. While in Stateless, the server does store data, but in a database to verify user/client whenever it needs to connect.
-# What does monolithic mean in Kubernetes?
-Similarly, a monolithic architecture suggests a single-tiered application where all different components from a single platform can be combined and used for a single program.
-# why we use odd number nodes in kubernetes?
-In order to facilitate availability of master services, they should be deployed with odd numbers (e.g. 3,5,7,9 etc.) so quorum (master node majority) can be maintained should one or more masters fail.
