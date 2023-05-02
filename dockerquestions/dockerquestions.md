@@ -35,7 +35,8 @@ An image is a read-only template with instructions for creating a Docker contain
 
 * runc = it is used for create the container 
 
-* docker logs:
+* 12.what is the use of docker logs?
+* If when we struck any then we find out in ``docker logs`` see that find out the error where it is in docker logs.
 Logging has always been a central part of application monitoring. Logs tell the full story of what is happening, or what happened at every layer of the stack. Whether it’s the application layer, the networking layer, the infrastructure layer, or storage – logs have all the answers
 
 * 11.exec command use?
