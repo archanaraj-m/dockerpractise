@@ -154,6 +154,7 @@ docker container run --name studentcont -d -p 3000:8080 student
 ![preview](./ms-images/img7.png)
 
 # push the images to public registry(dockerhub)
+* * For spc image (spc repository)
 * create a public repository
 * goto dockerhub click on create repository
 ![preview](./ms-images/img11.png)
@@ -168,17 +169,82 @@ docker container run --name studentcont -d -p 3000:8080 student
 * login into docker hub from cli(commandline interface)
 * for that docker command is ``docker login``
 ![preview](./ms-images/img9.png)
+* Next push the image to docker hub command is ``docker image push -a archanaraj/myspcimage``
 * When we push the same image second time with the diffrent tag it will not create any new image on the docker hub. But it will already layer existed.
-
-
-
-
+* Next show in dockerhub
+![preview](./ms-images/img14.png)
+* For delete the image command is ``docker image rm <imagename>``
+![preview](./ms-images/img15.png)
+* * For nop image (nop repository)
+* create another public repository for nop
+* goto dockerhub click on create repository
+![preview](./ms-images/img16.png)
+* create nop docker image
+* ``docker image ls``
+![preview](./ms-images/img17.png)
+* After building the image tag the image to new naming format
+* for that command is ``docker image tag nop archanaraj/nop:latest``
+* next ``docker image ls``
+* In the above command tag is given by our wish we can give any in that tag (example ia can give latest,1.0 like,if we can give our name also)
+![preview](./ms-images/img18.png)
+* login into docker hub from cli(commandline interface)
+* for that docker command is ``docker login``
+* Next push the image to docker hub command is ``docker image push -a archanaraj/nop``
+![preview](./ms-images/img19.png)
+* Next show in dockerhub
+![preview](./ms-images/img20.png)
+* * For student register image (student repository)
+* same above process creat the repo in dockerhub
+* Next build the image after that create tag for that image 
+![preview](./ms-images/img21.png)
+* And next login to the docker ``docker login``
+* next push the image to dockerhub ``docker image push -a archanaraj/student``
+![preview](./ms-images/img22.png)
+* check in dockerhub
+![preview](./ms-images/img23.png)
 # 2) Push these images to  
     a) AWS ECR
     b) Azure ACR
+* Private Registries
+  There are many applciations for hosting private registries
+      AWS: ECR (Elastic container registry)
+      Azure: ACR (Azure Container Registry)
+      Jfrog  
+* First goto AWS => Elastic Container Registry
+* In that create repository
+![preview](./ms-images/img24.png)
+![preview](./ms-images/img25.png)
+![preview](./ms-images/img26.png)
+* After creating the repository click on that repo we can see =>view push commands
+* click on that view push commands 
+![preview](./ms-images/img27.png) 
+![preview](./ms-images/img28.png)
+* Next in the machine install awscli for aws configure 
+```
+sudo apt update
+sudo apt install awscli
+aws configure
+```
+* for aws configure  credentials goto aws=> iam=>users=>add user=>create user=>attach policy AdiministratorAccess
+* click on =>Next=>create user=>click on user=>seecurity credentials=>scroll down=> access key=>create access key
+![preview](./ms-images/img29.png)
+![preview](./ms-images/img30.png)
+![preview](./ms-images/img31.png)
+* After AWS configure ![preview](./ms-images/img32.png)
+* execute the command in that push commands![preview](./ms-images/img28.png)
+* execute the command
+![preview](./ms-images/img33.png)
+![preview](./ms-images/img34.png)
+* ckeck in aws elastic container registry(ECR)
+![preview](./ms-images/img35.png)
+* For pull the image from dockerhub command is ``docker image pull archanaraj/myspcimage:latest``
+  ``docker image pull <username/reponame:tag>``
+* ``docker image tag archanaraj/myspcimage:latest 760450597737.dkr.ecr.eu-west-3.amazonaws.com/myspcrepo:latest`` in this command create tag for image that 7670........... is created by aws not by us because it's private registry so we can create the tag image with use of it(767.....) 
+* For push the image to ECR repo command is ``docker image push 760450597737.dkr.ecr.eu-west-3.amazonaws.com/myspcrepo:latest``
+  ``docker image push <image name with tag>``
+![preview](./ms-images/img36.png)
 
-
-3) Write a docker compose file for
+1) Write a docker compose file for
     a) Nop Commerce
     b) Spring petclinic
     c) Game of life
