@@ -29,6 +29,7 @@ sh get-docker.sh
   $ docker -—version
   $ docker info
   ```
+  ![preview](./ms-images/img8.png)
 #  create a dockerfile in vi Dockerfile
 
 * First we can write dockerfile with help of manual commands
@@ -151,6 +152,24 @@ docker container run --name studentcont -d -p 3000:8080 student
 ![preview](./ms-images/img6.png)
 * with use of that port number paste in dockerplayground then in newtab student course register page came
 ![preview](./ms-images/img7.png)
+
+# push the images to public registry(dockerhub)
+* create a public repository
+* goto dockerhub click on create repository
+![preview](./ms-images/img11.png)
+![preview](./ms-images/img12.png)
+* after creating the repository it's came like the below image and that repo name is also like this "<username>/<repositoryname>:tag
+* we can give tag (:latest or any based on that image ex: for spc 3.0.0)
+![preview](./ms-images/img13.png)
+* After building the image tag the image to new naming format
+* for that command is ``docker image tag spc archanaraj/myspcimage:3.0.0``
+* next ``docker image ls``
+* if we give another tag also image is build but image ID not changed only tag will change
+* login into docker hub from cli(commandline interface)
+* for that docker command is ``docker login``
+![preview](./ms-images/img9.png)
+* When we push the same image second time with the diffrent tag it will not create any new image on the docker hub. But it will already layer existed.
+
 
 
 
