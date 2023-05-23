@@ -90,8 +90,6 @@ COPY --from=vcs /spring-petclinic /spring-petclinic
 RUN ls /spring-petclinic 
 RUN cd /spring-petclinic && mvn package
 
-
-
 FROM amazoncorretto:17-alpine-jdk
 LABEL author="archana"
 EXPOSE 8080
@@ -247,7 +245,6 @@ aws configure
 
 # 3) Write a docker compose file for
     a) Nop Commerce
-*     
     b) Spring petclinic
     c) Game of life
     d) Student Courses Register
