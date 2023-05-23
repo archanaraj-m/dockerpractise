@@ -162,6 +162,7 @@ docker container run --name studentcont -d -p 3000:8080 student
 * after creating the repository it's came like the below image and that repo name is also like this "<username>/<repositoryname>:tag
 * we can give tag (:latest or any based on that image ex: for spc 3.0.0)
 ![preview](./ms-images/img13.png)
+* for build the image ``docker image build -t <image name> .
 * After building the image tag the image to new naming format
 * for that command is ``docker image tag spc archanaraj/myspcimage:3.0.0``
 * next ``docker image ls``
@@ -244,8 +245,9 @@ aws configure
   ``docker image push <image name with tag>``
 ![preview](./ms-images/img36.png)
 
-1) Write a docker compose file for
+# 3) Write a docker compose file for
     a) Nop Commerce
+*     
     b) Spring petclinic
     c) Game of life
     d) Student Courses Register
